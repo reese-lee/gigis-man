@@ -1,12 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import classyMen01 from './../assets/images/classyMen01.jpeg';
-
-// import CardActions from '@material-ui/core/CardActions';
-// import CardContent from '@material-ui/core/CardContent';
-// import Button from '@material-ui/core/Button';
-// import Typography from '@material-ui/core/Typography';
-// import ScheduleFeed from './ScheduleFeed';
+import BreakNav from './BreakNav';
 
 const useStyles = makeStyles({
   image: {
@@ -21,7 +16,6 @@ const useStyles = makeStyles({
     width: '60%',
   },
   fonts:{
-    fontFamily: 'Playfair Display SC',
     color: 'white',
     fontSize: '5em',
     opacity: 0.85,
@@ -36,10 +30,13 @@ const backgroundImage = {
 export default function Splash() {
   const classes = useStyles();
   return (
-    <div style = {backgroundImage} className={classes.image}>
-      <div className={classes.centered}>
-        <h1 className={classes.fonts}>Gigi's Man</h1>
+    <div>
+      <div style = {backgroundImage} className={classes.image}>
+        <div className={classes.centered}>
+          <p className={classes.fonts} style={{fontFamily: 'Cinzel Decorative'}}>Gigi's Man</p>
+        </div>
       </div>
+      <BreakNav/>
     </div>
   );
 }

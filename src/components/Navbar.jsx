@@ -52,15 +52,15 @@ export default function ButtonAppBar() {
           <Typography variant="h6" className={classes.title}>
             <div className={classes.spacing}>
               <div className={classes.spacing}>
-                <Link to="/" style={{ textDecoration: 'none', fontFamily: 'Poiret One' }}><a className={classes.clicky}>Home</a></Link>
+                <Link to="/" style={{ textDecoration: 'none', fontFamily: 'Playfair Display SC' }}><a className={classes.clicky}>Home</a></Link>
               </div>
               <div className={classes.spacing}>
-                <Link to="/produce" style={{ textDecoration: 'none', fontFamily: 'Poiret One' }}><a className={classes.clicky}>The Men</a></Link>
+                <Link to="/produce" style={{ textDecoration: 'none', fontFamily: 'Playfair Display SC' }}><a className={classes.clicky}>The Men</a></Link>
               </div>
             </div>
 
           </Typography>
-          <Button color="inherit" style={{fontFamily: 'Poiret One'}}>ENTER</Button>
+          <Button color="inherit" style={{fontFamily: 'Playfair Display SC'}}>ENTER</Button>
         </Toolbar>
       </AppBar>
     </div>
