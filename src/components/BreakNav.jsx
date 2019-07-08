@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function BreakNav() {
+export default function BreakNav() {
 
   return (
     <div>
@@ -23,11 +24,10 @@ function BreakNav() {
         `}
       </style>
       <div className="titles">
-        <h6>ABOUT THE MEN</h6><h6>ABOUT GIGI</h6><h6>WHY GIGI'S MEN</h6>
+        <h6><Link to='/men'>ABOUT THE MEN</Link></h6><h6>ABOUT GIGI</h6><h6>WHY GIGI'S MEN</h6>
 
       </div>
       <hr/>
     </div>
-  )
+  );
 }
-export default BreakNav;

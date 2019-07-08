@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from './Navbar';
 import { Switch, Route } from 'react-router-dom';
-import AvailableProduce from './AvailableProduce';
 import Splash from './Splash';
 import Error404 from './Error404';
+import NewLikeControl from './NewLikeControl';
 
 function App() {
   return(
@@ -11,7 +11,7 @@ function App() {
       <Navbar/>
       <Switch>
         <Route exact path='/' component={Splash} />
-        <Route path='/produce' component={AvailableProduce}/>
+        <Route path='/men' component={NewLikeControl}/>
         <Route component={Error404}/>
       </Switch>
     </div>
