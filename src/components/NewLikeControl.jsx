@@ -9,13 +9,7 @@ class NewLikeControl extends React.Component {
     };
     this.incrementMe = this.incrementMe.bind(this);
   }
-
-  // handleClick() {
-  //   this.setState({
-  //     count: +1
-  //   });
-  // }
-
+  
   incrementMe() {
     let newCount = this.state.count +1;
     this.setState({
@@ -24,8 +18,6 @@ class NewLikeControl extends React.Component {
   }
 
   render() {
-    // const text = this.state.liked ? 'liked' : 'haven\'t liked';
-    // const label = this.state.liked ? 'Unlike' : 'Like';
     console.log(this.state.count);
 
     return (
